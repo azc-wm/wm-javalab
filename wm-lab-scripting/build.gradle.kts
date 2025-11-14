@@ -77,6 +77,10 @@ tasks.named<JavaExec>("run") {
 
 tasks.test {
     useJUnitPlatform()
+    // Useful to see system.out messages
+    testLogging {
+        showStandardStreams = true
+    }
 }
 
 dependencies {
